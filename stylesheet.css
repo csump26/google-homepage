@@ -1,5 +1,43 @@
+* {
+	margin: 0px;
+}
+
 html, body {
 	height: 100%;
+}
+
+.page {
+	min-height: 100%;
+	margin-bottom: 40px;
+}
+
+.page:after {
+	content: "";
+	display: block;
+}
+
+footer, .page:after {
+	height: 40px;
+}
+
+
+.center {
+	height: 231px;
+	margin-top: 50/px;
+}
+
+
+.logo {
+	bottom: -200px;
+	margin: 0 auto;
+	position: relative;
+	width: 269px;
+}
+
+
+img {
+	max-height: 100%;
+	max-width: 100%;
 }
 
 #headerlist{
@@ -18,6 +56,10 @@ li a {
 	text-decoration: none;
 }
 
+li a:hover {
+	text-decoration: underline;
+}
+
 #footer {
 	background-color: #f1f1f1;
 	clear: both;
@@ -25,22 +67,59 @@ li a {
 	width: 100%;
 	bottom: 0;
 	left: 0;
+	border: .5px solid #f1f1f1;
 }
 
 #footer a {
 	color: blue;
+	font-size: 15px;
+	
+}
+
+#footer a:hover {
+	text-decoration: underline;
 }
 
 .left {
 	float: left;
-	padding: 10px;
+	padding: 15px;
 	text-decoration: none;
+	margin-left: 15px;
 
 }
 
 .right {
 	float: right;
-	padding: 10px;
+	padding: 15px;
 	text-decoration:  none;
+	margin-right: 15px;
+
+}
+
+.searchform {
+	width: 450px;
+	margin: 100px auto;
+}
+
+.searchbox {
+	border: 1px solid lightgray;
+	margin-bottom: 15px;
+	height: 40px;
+}
+
+.searchbox:focus {
+	border: 1px solid blue;
+}
+
+input[name=searchtext]{
+	border: none;
+	width: 445px;
+	font-size: 20px;
+	height: 38px;
+}
+
+.searchbuttons {
+	margin: 0 auto;
+	width: 250px;
 }
 
